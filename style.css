@@ -1,0 +1,223 @@
+        body {
+          background-image: url('Background.jpg');
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+        }
+
+        @font-face {
+          font-family: Madetommy;
+          src: url(Madetommy-Regular.woff2);
+        }
+
+        @font-face {
+          font-family: Metropolis;
+          src: url(Metropolis-Regular.woff2);
+        }
+
+        #container {
+          font-family: "Arial";
+          font-size: 1.5vw;
+          margin: 2vw 5vw 0vw 5vw;
+        }
+
+        #header {
+          font-family: "Metropolis";
+          font-size: 1.5vw;
+          color: #373737;
+          margin-bottom: 5vw;
+        }
+
+        #header * {
+          display: inline-block;
+        }
+
+        #flecha {
+          width: 2.5vw;
+          max-width: 100%;
+          height: auto;
+        }
+
+        #logo {
+          width: 25vw;
+          max-width: 100%;
+          height: auto;
+          margin: 1vw;
+        }
+
+        #main {
+          background: white;
+          margin: 0vw 5vw 0vw 5vw;
+          border: 0.1vw solid red;
+          border-radius: 1vw;
+          height: 25vw;
+          box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        #main #title,
+        #main .text,
+        #comenzar, #siguiente, #salir {
+          font-family: "Madetommy";
+        }
+
+        #main #title {
+          font-size: 2.2vw;
+          margin: 2vw 8vw 0vw 8vw;
+        }
+
+        #main .text {
+          font-size: 1.5vw;
+          margin: 2vw 10vw 0vw 10vw;
+        }
+
+        #comenzar, #siguiente, #salir {
+          background: none;
+          border: none;
+          padding: 0;
+          margin: 0;
+          cursor: pointer;
+          outline: none;
+          color: #525252;
+          font-size: 1.5vw;
+          display: grid;
+          text-align: right !important;
+          margin-right: 0.5vw;
+         }
+
+        #container p {
+          margin: 0;
+        }
+
+        #header {
+          margin-bottom: 0vw;
+        }
+        #pregunta {
+
+            display: grid;
+        }
+
+        label {
+            display: block;
+            margin: 10px 0;
+            padding: 10px;
+            border: 2px solid #ddd;
+            background-color: #fff;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        input[type="radio"] {
+            display: none;
+        }
+
+        input[type="radio"]:checked + label {
+            background-color: #3498db;
+            color: #fff;
+        }
+
+        button {
+            margin-top: 20px;
+            background-color: #3498db;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #2980b9;
+        }
+
+
+
+        h2 {
+            color: #3498db;
+        }
+
+        .option-container {
+            display: flex;
+            align-items: center;
+            margin: 0 0;
+        }
+
+        .letter {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 3vw;
+            height: 6vw;
+            background-color: #e74c3c; 
+            border: 0.5 vw solid gray; 
+            color: #fff;
+            cursor: pointer;
+            margin-right: 0vw;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .option-text {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            padding: 2vw;
+            border: 0.5 vw solid gray; 
+            background-color: #fff;
+            cursor: pointer;
+            transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+            font-size: 1vw;
+            padding: 2.2vw;
+        }
+
+        #separator {
+            color: #FF2828;
+        }
+
+        input[type="radio"] {
+            display: none;
+        }
+
+        .option-container:hover .letter,
+        .option-container:hover .option-text {
+            background-color: #e74c3c; 
+            color: #fff;
+        }
+
+        input[type="radio"]:checked + .option-container .letter,
+        input[type="radio"]:checked + .option-container .option-text {
+            background-color: #e74c3c;
+            color: #fff;
+            border-color: #e74c3c;
+        }
+
+        .selected {
+            background-color: #e74c3c;
+            color: #fff;
+            border-color: #e74c3c;
+        }
+
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #3498db;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #2980b9;
+        }
+
+        #pregunta1, #pregunta2, #pregunta3, #pregunta4, #pregunta5, #resultado, #win, #lose {
+            display: none;
+        }
+
+        #scoreDisplay {
+            color: black;
+        }
+
+        #cara_feliz, #cara_triste {
+          width: 15vw;
+          max-width: 100%;
+          height: auto;
+        }

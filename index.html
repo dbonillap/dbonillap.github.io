@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="SCORM_API_wrapper.js"></script>
+    <script src="script.js"></script>
+    <title>Santander One Demo</title>
+</head>
+
+<body>
+
+    <div id="container">
+
+        <div id="test_final" class="slide">
+
+            <div id="header">
+
+                <img src="Triangle.gif" id="flecha">
+
+                <h1>TEST FINAL</h1>
+
+                <img src="Santander_One_2x.png" id="logo" align="right">
+
+            </div>
+
+            <div id="main">
+
+                <div id="title">
+                    <p>¡Bienvenido al <span style="color:#D73535"> TEST FINAL</span> de este módulo formativo!</p>
+                </div>
+
+                <div class="text">
+                    <p>A continuación deberás responder a <span style="color:#D73535"> 5 preguntas</span> aleatorias en las que deberás elegir una de las opciones que te presentan.</p>
+                </div>
+
+                <div class="text">
+                    <p>Deberás acertar un <span style="color:#D73535"> mínimo de 3 preguntas</span> para superar el Test y dar por finalizado este módulo formativo. Si no lo consigues, <span style="color:#D73535"> podrás repetir el Test</span> tantas veces como sea necesario hasta que lo superes.</p>
+                </div>
+
+                <div id="siguiente">
+
+                    <button id="comenzar" onclick="nextSlide()">Comenzar ></button>
+
+                </div>
+
+            </div>
+        </div>
+
+        <div id="pregunta1" class="slide">
+            <div id="header">
+
+                <img src="Triangle.gif" id="flecha">
+
+                <h1>PREGUNTA 1/5</h1>
+
+                <img src="Santander_One_2x.png" id="logo" align="right">
+
+            </div>
+            <p id="separator">_______________________________________________</p>
+
+            <h4>Dentro del Plan Santander One Viajes, ¿se incluye algún seguro?</h4>
+
+            <form>
+                <div class="option-container">
+                    <input type="radio" id="option1A" name="p1" value="A">
+                    <div class="letter">A</div>
+                    <label class="option-text" for="option1A">No, el Plan Santander One Viajes no incluye coberturas de seguros</label>
+                </div>
+
+                <div class="option-container">
+                    <input type="radio" id="option1B" name="p1" value="B">
+                    <div class="letter">B</div>
+                    <label class="option-text" for="option1B">Solamente incluye el seguro de compra internacional</label>
+                </div>
+
+                <div class="option-container">
+                    <input type="radio" id="option1C" name="p1" value="C">
+                    <div class="letter">C</div>
+                    <label class="option-text" for="option1C">Incluye seguro de asistencia en viajes, accidentes y compra protegida internacional Premium</label>
+                </div>
+                <div id="siguiente">
+
+                    <button type="button" id="siguiente" onclick="checkAnswer(1,'C')">Siguiente ></button>
+
+                </div>
+
+            </form>
+        </div>
+
+        <div id="pregunta2" class="slide">
+            <div id="header">
+
+                <img src="Triangle.gif" id="flecha">
+
+                <h1>PREGUNTA 2/5</h1>
+
+                <img src="Santander_One_2x.png" id="logo" align="right">
+
+            </div>
+            <p id="separator">_______________________________________________</p>
+
+            <h4>¿Qué servicio no está asociado al Plan Santander One Viajes?</h4>
+
+            <form>
+                <div class="option-container">
+                    <input type="radio" id="option2A" name="p2" value="A">
+                    <div class="letter">A</div>
+                    <label class="option-text" for="option2A">Transferencias internacionales zona no SEPA</label>
+                </div>
+
+                <div class="option-container">
+                    <input type="radio" id="option2B" name="p2" value="B">
+                    <div class="letter">B</div>
+                    <label class="option-text" for="option2B">Compras en el extranjero en cualquier moneda</label>
+                </div>
+
+                <div class="option-container">
+                    <input type="radio" id="option2C" name="p2" value="C">
+                    <div class="letter">C</div>
+                    <label class="option-text" for="option2C">Compra de divisa</label>
+                </div>
+                <div id="siguiente">
+
+                    <button type="button" id="siguiente" onclick="checkAnswer(2,'A')">Siguiente ></button>
+
+                </div>
+
+            </form>
+        </div>
+
+        <div id="pregunta3" class="slide">
+            <div id="header">
+
+                <img src="Triangle.gif" id="flecha">
+
+                <h1>PREGUNTA 3/5</h1>
+
+                <img src="Santander_One_2x.png" id="logo" align="right">
+
+            </div>
+            <p id="separator">_______________________________________________</p>
+
+            <h4>¿Qué niveles existen dentro del Plan Santander Iberia Plus?</h4>
+
+            <form>
+                <div class="option-container">
+                    <input type="radio" id="option3A" name="p3" value="A">
+                    <div class="letter">A</div>
+                    <label class="option-text" for="option3A">Solo existe un nivel: el nivel Básico</label>
+                </div>
+
+                <div class="option-container">
+                    <input type="radio" id="option3B" name="p3" value="B">
+                    <div class="letter">B</div>
+                    <label class="option-text" for="option3B">El plan está dividido en 2 niveles: Básico y Élitel</label>
+                </div>
+
+                <div class="option-container">
+                    <input type="radio" id="option3C" name="p3" value="C">
+                    <div class="letter">C</div>
+                    <label class="option-text" for="option3C">El Plan está dividido en 3 niveles: Básico, Premium y Élite</label>
+                </div>
+                <div id="siguiente">
+
+                    <button type="button" id="siguiente" onclick="checkAnswer(3,'C')">Siguiente ></button>
+
+                </div>
+
+            </form>
+        </div>
+
+        <div id="pregunta4" class="slide">
+            <div id="header">
+
+                <img src="Triangle.gif" id="flecha">
+
+                <h1>PREGUNTA 4/5</h1>
+
+                <img src="Santander_One_2x.png" id="logo" align="right">
+
+            </div>
+            <p id="separator">_______________________________________________</p>
+
+            <h4>Cuando un cliente contrata algún Plan Santander One, ¿en qué momento puede empezar a disfrutarlo?</h4>
+
+            <form>
+                <div class="option-container">
+                    <input type="radio" id="option4A" name="p4" value="A">
+                    <div class="letter">A</div>
+                    <label class="option-text" for="option4A">El primer día del mes siguiente a la contratación</label>
+                </div>
+
+                <div class="option-container">
+                    <input type="radio" id="option4B" name="p4" value="B">
+                    <div class="letter">B</div>
+                    <label class="option-text" for="option4B">El disfrute de los Planes es automático al mismo momento de la contratación</label>
+                </div>
+
+                <div class="option-container">
+                    <input type="radio" id="option4C" name="p4" value="C">
+                    <div class="letter">C</div>
+                    <label class="option-text" for="option4C">Un mes después de la contratación</label>
+                </div>
+                <div id="siguiente">
+
+                    <button type="button" id="siguiente" onclick="checkAnswer(4,'B')">Siguiente ></button>
+
+                </div>
+
+            </form>
+        </div>
+
+        <div id="pregunta5" class="slide">
+            <div id="header">
+
+                <img src="Triangle.gif" id="flecha">
+
+                <h1>PREGUNTA 5/5</h1>
+
+                <img src="Santander_One_2x.png" id="logo" align="right">
+
+            </div>
+            <p id="separator">_______________________________________________</p>
+
+            <h4>¿Se pueden contratar varios Planes Santander One de manera simultánea?</h4>
+
+            <form>
+                <div class="option-container">
+                    <input type="radio" id="option5A" name="p5" value="A">
+                    <div class="letter">A</div>
+                    <label class="option-text" for="option5A">Depende del tipo de cliente</label>
+                </div>
+
+                <div class="option-container">
+                    <input type="radio" id="option5B" name="p5" value="B">
+                    <div class="letter">B</div>
+                    <label class="option-text" for="option5B">Si. Todos los clientes pueden personalizar su propuesta de valor, contratando los Planes de servicios que mejor se adapten a ellos</label>
+                </div>
+
+                <div class="option-container">
+                    <input type="radio" id="option5C" name="p5" value="C">
+                    <div class="letter">C</div>
+                    <label class="option-text" for="option5C">No. Los clientes tienen que elegir el Plan que mejor se adapta</label>
+                </div>
+                <div id="siguiente">
+
+                    <button type="button" id="siguiente" onclick="checkAnswer(5,'B'); finalizarSCORM()">Siguiente ></button>
+
+                </div>
+
+            </form>
+        </div>
+
+        <div id="resultado" class="slide">
+
+            <div id="header">
+
+                <img src="Triangle.gif" id="flecha">
+
+                <h1>RESULTADO</h1>
+
+                <img src="Santander_One_2x.png" id="logo" align="right">
+
+            </div>
+            <p id="separator">_______________________________________________</p>
+
+            <div id="aciertos" align="center">
+            
+            <h1 id="scoreDisplay">Aciertos: <span id="scoreValue">0</span>/5</h1>
+
+            <br>
+
+            <div id="win">
+                <p color="darkgreen">¡Enhorabuena! ¡Has superado el Test Final!</p>
+                <br>
+                <img id="cara_feliz" src="cara_feliz.png">
+            </div>
+
+            <div id="lose">
+                <p color="darkred">No has superado el Test...</p>
+                <br>
+                <img id="cara_triste" src="cara_triste.png">
+            </div>
+
+            <div>
+                <p color="black">Ya puedes cerrar el curso</p>
+            </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
